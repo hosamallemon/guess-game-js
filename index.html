@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h2>Guess your name</h2>
+
+    <div class="guess">
+        <label for="name"></label>
+        <input type="text" id="name" onkeypress="return event.charCode != 32">
+        <input type="submit" value="guess" id="guess-btn">
+    </div>
+    <section>
+        <div id="card" class="card">
+            <div class="card-content">
+                <div class="main-img">
+                    <img src="./img/gender1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1></h1>
+                    <span class="name"></span>
+                    <span class="name"></span>
+                </div>
+                <div class="images" id="images">
+                    <div class="img">
+                        <img src="./img/flag3.png" alt="flag">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="lang"></div>
+            </div>
+        </div>
+
+        <div id="all-names" class="names">
+        </div>
+    </section>
+
+
+
+
+    <!-- <script src="./cards.js"></script> -->
+    <!-- <script src="./computer.js"></script> -->
+    <!-- <script src="./chess.js"></script> -->
+    <script src="./guess-name.js"></script>
+</body>
+
+</html>
